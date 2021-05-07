@@ -1,10 +1,12 @@
-  
+import ImageSlider from '../components/carousel/ImageSlider';
+import { SliderData } from '../components/carousel/SliderData';
+import '../components/carousel/ImageSlider.css';
 import React from 'react';
 
 function Home() {
   return (
     <div className='home'>
-      <h1>Home</h1>
+      <ImageSlider slides={SliderData} />
     </div>
   );
 }
